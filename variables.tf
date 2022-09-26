@@ -1,0 +1,56 @@
+variable projectID{
+    type= string      
+ }
+
+variable region{
+    type= string
+    default ="us-central1"    
+ }
+
+variable zone{
+    type= string 
+    default ="us-central1-a"   
+ }
+
+variable deploymentName{
+    type= string  
+    }
+  
+variable boomiAuthenticationType{ 
+    type= string
+    default="Token or Password"
+ }
+
+variable boomiUserEmailID{
+    type= string
+ }
+
+variable boomiPasswordORboomiAPIToken{
+    type = string
+    sensitive = true
+ } 
+
+variable boomiAccountID{
+    type= string
+ }    
+
+variable molecule_Name{
+    type= string    
+ }
+
+variable machineType{
+    type= string  
+    default= "e2-standard-4"  
+ }
+
+variable atomtype{
+    type= string    
+ }
+
+variable gcp_services_list {
+  description = "The list of GCP APIs necessary for the project."
+  type        = list(string)
+  default     = ["cloudfunctions.googleapis.com",
+"compute.googleapis.com",
+"storage.googleapis.com"]
+ }
