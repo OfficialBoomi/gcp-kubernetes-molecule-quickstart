@@ -1,0 +1,12 @@
+deploymentName ="boomi-quickstart-molecule"
+projectID=""
+region = ""
+zone =""
+boomiAuthenticationType=""
+boomiUserEmailID=""
+boomiPasswordORboomiAPIToken=""
+boomiAccountID=""
+molecule_Name=""
+machineType=""
+atomtype="Privatecloud or Molecule"
+
